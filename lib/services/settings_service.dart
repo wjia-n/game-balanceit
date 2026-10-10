@@ -68,7 +68,7 @@ class BalanceSettings extends ChangeNotifier {
   String modeId = 'breezy';
   String themeId = 'classic';
   int ballStyle = 0;
-  bool isPro = false;
+  bool isPro = true; // everything unlocked — no Pro version
   int gamesPlayed = 0;
   int wins = 0;
   double bestCalm = 0;
@@ -179,7 +179,7 @@ class BalanceSettings extends ChangeNotifier {
     modeId = p.getString(_kMode) ?? 'breezy';
     themeId = p.getString(_kTheme) ?? 'classic';
     ballStyle = (p.getInt(_kBall) ?? 0).clamp(0, BallStyles.styles.length - 1);
-    isPro = p.getBool(_kIsPro) ?? false;
+    isPro = true; // everything unlocked
     gamesPlayed = p.getInt(_kGames) ?? 0;
     wins = p.getInt(_kWins) ?? 0;
     bestCalm = p.getDouble(_kBestCalm) ?? 0;
