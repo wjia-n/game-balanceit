@@ -189,7 +189,7 @@ class BalanceThemes {
     ),
     BalanceThemeDef(
       id: 'arctic',
-      name: 'Arctic Pine',
+      name: 'Frosted Pine',
       woodDark: Color(0xFF6B5B43),
       woodMid: Color(0xFFA08B62),
       woodDeep: Color(0xFF453B2B),
